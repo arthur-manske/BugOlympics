@@ -21,9 +21,9 @@ CREATE TABLE carros (
     id INT PRIMARY KEY UNIQUE NOT NULL,
     marca VARCHAR(50),
     modelo VARCHAR(50),
-    ano INT NOT NULL,
+    ano YEAR NOT NULL, 
     cor VARCHAR(50),
-    preco DECIMAL(10,2)
+    preco UNSIGNED DECIMAL(10, 2) NOT NULL --positivo
 )
 
 INSERT INTO carros (id, marca, modelo, ano, cor, preco) VALUES (1, 'Toyota', 'Corolla', 2020, 'Azul', 85000.50);
