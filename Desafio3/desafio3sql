@@ -18,12 +18,12 @@ INSERT INTO carros (id, marca, modelo, ano, cor, preco) VALUES (4, 'Chevrolet', 
 
 --Codigo corrigido
 CREATE TABLE carros (
-    id INT PRIMARY KEY UNIQUE NOT NULL,
+    id INT PRIMARY KEY NOT NULL,
     marca VARCHAR(50),
     modelo VARCHAR(50),
     ano YEAR NOT NULL, 
     cor VARCHAR(50),
-    preco UNSIGNED DECIMAL(10, 2) NOT NULL --positivo
+    preco DECIMAL(10, 2) UNSIGNED NOT NULL 
 )
 
 INSERT INTO carros (id, marca, modelo, ano, cor, preco) VALUES (1, 'Toyota', 'Corolla', 2020, 'Azul', 85000.50);
